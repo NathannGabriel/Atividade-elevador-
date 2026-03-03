@@ -37,7 +37,6 @@ if len(registros) > 0:
 
     periodo_fluxo = max(fluxo[mais_usado], key=fluxo[mais_usado].get)
 
-    # Período mais utilizado geral (ignora zero)
     periodos_validos = {k: v for k, v in periodos.items() if v > 0}
     periodo_mais_usado = max(periodos_validos, key=periodos_validos.get)
 
